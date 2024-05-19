@@ -1,0 +1,203 @@
+@import "header/header.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.titulos_secciones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .caja_responsiva {
+    h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 70px;
+    }
+  }
+}
+
+//ESTILOS TYPED
+
+.mascota {
+  font-size: 70px;
+  color: white;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+.container_fondo {
+  animation-timing-function: cubic-bezier();
+  animation: fade;
+  animation-duration: 0.8s;
+  background-image: url("../assets/fondo_pagina/fondojpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .container_typed {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    font-weight: bold;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: rgb(255, 230, 0);
+      font-family: "Bebas Neue", sans-serif;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    span {
+      animation-timing-function: cubic-bezier();
+      animation: fade;
+      animation-duration: 0.8s;
+      text-align: center;
+      width: 100%;
+      height: 50px;
+    }
+  }
+}
+
+.separador10 {
+  height: 10px;
+}
+.separador30 {
+  height: 30px;
+}
+
+.container_info_button {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  .info {
+    transition: all 0.2s;
+
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    width: 150px;
+    font-family: "Poppins", sans-serif;
+
+    background-color: rgb(38, 226, 0);
+  }
+
+  .info:hover {
+    outline: 3px solid white;
+    background-color: rgb(25, 150, 0);
+  }
+}
+
+.contenedor_main {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  .caja_responsiva {
+    width: 100%;
+
+    max-width: 1100px;
+    display: flex;
+
+    .caja1 {
+      height: 300px;
+      width: 50%;
+    }
+
+    .caja2 {
+      display: flex;
+      justify-content: center;
+      background-color: beige;
+      height: 300px;
+      margin: 0;
+      flex-direction: column;
+      width: 50%;
+
+      h2 {
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+      }
+      h5 {
+        padding: 10px;
+        font-family: "Bebas Neue", sans-serif;
+
+        font-size: 20px;
+
+        font-weight: bold;
+      }
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 100;
+        padding: 15px;
+        text-align: justify;
+      }
+    }
+
+    .reserva {
+      //CAJA 1
+      width: 90%;
+      border: 3px solid rgba(0, 0, 0, 0.233);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .reserva_img {
+      //CAJA 2
+      background-image: url("../assets/fondo_pagina/reservawebp.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .SERVICIOS {
+      background-image: url("../assets/fondo_pagina/SERVICIOS.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .PRODUCTOS {
+      background-image: url("../assets/fondo_pagina/productos.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .CONTACTANOS {
+      background-image: url("../assets/fondo_pagina/CONTATO.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .caja_responsiva {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

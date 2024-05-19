@@ -1,0 +1,539 @@
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para el tema oscuro */
+.dark-theme {
+  background-color: black;
+}
+.dark-theme header .mainHeader .logo {
+  color: white;
+}
+.dark-theme header .mainHeader .logo .lineTile {
+  background-color: white;
+}
+.dark-theme header .mainHeader .logo:hover {
+  color: black;
+}
+.dark-theme header .mainHeader nav ul li a {
+  color: white;
+}
+.dark-theme header .mainHeader nav ul li a .line {
+  background-color: white;
+}
+.dark-theme header .mainHeader .button {
+  background-color: white;
+}
+.dark-theme header .mainHeader .buttonTheme {
+  background-color: white;
+}
+
+.filter {
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 80px;
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .mainHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+}
+header .mainHeader .container_icon_menu {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .container_icon_menu .icon__menu {
+  width: 50px;
+  height: 50px;
+  background-color: #ffbf00;
+  position: absolute;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .container_icon_menu .icon__menu .fas {
+  color: black;
+}
+header .mainHeader .container_icon_menu .icon__menu:hover {
+  background-color: #c29100;
+}
+header .mainHeader .container_icon_menu .icon__menu:active {
+  transform: scale(0.9);
+}
+header .mainHeader .logo {
+  height: 50px;
+  width: 250px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+}
+header .mainHeader .logo .lineTile {
+  transition: all 0.3s;
+  height: 50px;
+  width: 10px;
+  margin-left: -280px;
+  position: absolute;
+  background-color: rgb(255, 41, 173);
+}
+header .mainHeader .logo .tileInside {
+  position: absolute;
+  visibility: hidden;
+}
+header .mainHeader .logo:hover {
+  color: black;
+}
+header .mainHeader .logo:hover .lineTile {
+  transform: scaleX(28);
+  transform-origin: left;
+}
+header .mainHeader .logo:hover .tileInside {
+  visibility: visible;
+  font-style: normal;
+}
+header .mainHeader nav {
+  display: flex;
+}
+header .mainHeader nav ul {
+  display: flex;
+}
+header .mainHeader nav ul li {
+  list-style: none;
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader nav ul li a {
+  text-decoration: none;
+  height: 40px;
+  width: 90px;
+  font-weight: bold;
+  overflow: hidden;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+header .mainHeader nav ul li a .line {
+  position: absolute;
+  height: 3px;
+  margin-top: 35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  width: 0;
+  background-color: black;
+}
+header .mainHeader nav ul li a:hover {
+  transform: scale(1.05);
+}
+header .mainHeader nav ul li a:hover .line {
+  visibility: visible;
+  opacity: 1;
+  width: 70px;
+}
+header .mainHeader .button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .button .container_button {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(255, 123, 0);
+  position: absolute;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .button .container_button a {
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+}
+header .mainHeader .button .container_button:hover {
+  background-color: rgb(37, 216, 2);
+}
+header .mainHeader .button .container_button:active {
+  transform: scale(0.9);
+}
+header .mainHeader .buttonTheme {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .buttonTheme .container_button_Theme {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 123, 0);
+  position: absolute;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .buttonTheme .container_button_Theme .fa-solid {
+  color: white;
+}
+header .mainHeader .buttonTheme .container_button_Theme:hover {
+  background-color: #c29100;
+}
+header .mainHeader .buttonTheme .container_button_Theme:hover .fa-solid {
+  color: white;
+}
+header .mainHeader .buttonTheme .container_button_Theme:active {
+  transform: scale(0.9);
+}
+
+.menu__side {
+  width: 0px;
+  height: 100%;
+  background-color: rgb(255, 41, 173);
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  z-index: 300;
+  overflow: hidden;
+  overflow-y: scroll;
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar {
+  display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.name__page {
+  padding: 20px 30px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name__page i {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.options__menu {
+  padding: 20px 30px;
+  position: absolute;
+  top: 80px;
+}
+
+.options__menu a {
+  color: rgba(255, 255, 255, 0.6980392157);
+  cursor: default;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover {
+  color: white;
+}
+
+.options__menu .option {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.options__menu .option h4 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+a.selected {
+  color: #fff;
+}
+
+.selected:before {
+  content: "";
+  width: 3px;
+  height: 80%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+.menu__side_move {
+  width: 210px;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 970px) {
+  .mainHeader {
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 970px) and (min-width: 700px) {
+  header .mainHeader .logo {
+    margin-left: 20px;
+  }
+  header .mainHeader nav {
+    outline: 3px solid blue;
+    display: none;
+  }
+  header .mainHeader .container_icon_menu {
+    background-color: #c29100;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  header .mainHeader nav {
+    display: none;
+  }
+  header .mainHeader .container_icon_menu {
+    display: flex;
+  }
+  header .mainHeader .button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 250px) {
+  header {
+    transform: scale(0.9);
+  }
+  header .mainHeader .logo {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  header .mainHeader nav {
+    display: none;
+  }
+  header .mainHeader .container_icon_menu {
+    display: flex;
+  }
+  header .mainHeader .button {
+    display: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.titulos_secciones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos_secciones .caja_responsiva h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+}
+
+.mascota {
+  font-size: 70px;
+  color: white;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+.container_fondo {
+  animation-timing-function: cubic-bezier();
+  animation: fade;
+  animation-duration: 0.8s;
+  background-image: url("../assets/fondo_pagina/fondojpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container_fondo .container_typed {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  font-weight: bold;
+}
+.container_fondo .container_typed h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 230, 0);
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+.container_fondo .container_typed span {
+  animation-timing-function: cubic-bezier();
+  animation: fade;
+  animation-duration: 0.8s;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.separador10 {
+  height: 10px;
+}
+
+.separador30 {
+  height: 30px;
+}
+
+.container_info_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_info_button .info {
+  transition: all 0.2s;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(38, 226, 0);
+}
+.container_info_button .info:hover {
+  outline: 3px solid white;
+  background-color: rgb(25, 150, 0);
+}
+
+.contenedor_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_main .caja_responsiva {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+}
+.contenedor_main .caja_responsiva .caja1 {
+  height: 300px;
+  width: 50%;
+}
+.contenedor_main .caja_responsiva .caja2 {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  height: 300px;
+  margin: 0;
+  flex-direction: column;
+  width: 50%;
+}
+.contenedor_main .caja_responsiva .caja2 h2 {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.contenedor_main .caja_responsiva .caja2 h5 {
+  padding: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contenedor_main .caja_responsiva .caja2 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  padding: 15px;
+  text-align: justify;
+}
+.contenedor_main .caja_responsiva .reserva {
+  width: 90%;
+  border: 3px solid rgba(0, 0, 0, 0.233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.contenedor_main .caja_responsiva .reserva_img {
+  background-image: url("../assets/fondo_pagina/reservawebp.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor_main .caja_responsiva .SERVICIOS {
+  background-image: url("../assets/fondo_pagina/SERVICIOS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor_main .caja_responsiva .PRODUCTOS {
+  background-image: url("../assets/fondo_pagina/productos.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor_main .caja_responsiva .CONTACTANOS {
+  background-image: url("../assets/fondo_pagina/CONTATO.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+  .caja_responsiva {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,373 @@
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para el tema oscuro */
+.dark-theme {
+  background-color: black;
+}
+.dark-theme header .mainHeader .logo {
+  color: white;
+}
+.dark-theme header .mainHeader .logo .lineTile {
+  background-color: white;
+}
+.dark-theme header .mainHeader .logo:hover {
+  color: black;
+}
+.dark-theme header .mainHeader nav ul li a {
+  color: white;
+}
+.dark-theme header .mainHeader nav ul li a .line {
+  background-color: white;
+}
+.dark-theme header .mainHeader .button {
+  background-color: white;
+}
+.dark-theme header .mainHeader .buttonTheme {
+  background-color: white;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .mainHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+}
+header .mainHeader .container_icon_menu {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+header .mainHeader .container_icon_menu .icon__menu {
+  width: 50px;
+  height: 50px;
+  background-color: #ffbf00;
+  position: absolute;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .container_icon_menu .icon__menu .fas {
+  color: black;
+}
+header .mainHeader .container_icon_menu .icon__menu:hover {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+header .mainHeader .container_icon_menu .icon__menu:active {
+  margin-bottom: 0px;
+  transition: all 0.1s;
+  margin-left: 0px;
+}
+header .mainHeader .logo {
+  height: 50px;
+  width: 250px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+}
+header .mainHeader .logo .lineTile {
+  transition: all 0.3s;
+  height: 50px;
+  width: 10px;
+  margin-left: -280px;
+  position: absolute;
+  background-color: black;
+}
+header .mainHeader .logo .tileInside {
+  position: absolute;
+  visibility: hidden;
+}
+header .mainHeader .logo:hover {
+  color: white;
+}
+header .mainHeader .logo:hover .lineTile {
+  transform: scaleX(28);
+  transform-origin: left;
+}
+header .mainHeader .logo:hover .tileInside {
+  visibility: visible;
+  font-style: normal;
+}
+header .mainHeader nav {
+  display: flex;
+}
+header .mainHeader nav ul {
+  display: flex;
+}
+header .mainHeader nav ul li {
+  list-style: none;
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader nav ul li a {
+  text-decoration: none;
+  height: 40px;
+  width: 90px;
+  font-weight: bold;
+  overflow: hidden;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+header .mainHeader nav ul li a .line {
+  position: absolute;
+  height: 3px;
+  margin-top: 35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  width: 0;
+  background-color: black;
+}
+header .mainHeader nav ul li a:hover {
+  transform: scale(1.05);
+}
+header .mainHeader nav ul li a:hover .line {
+  visibility: visible;
+  opacity: 1;
+  width: 70px;
+}
+header .mainHeader .button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+header .mainHeader .button .container_button {
+  width: 200px;
+  height: 50px;
+  background-color: #ffbf00;
+  position: absolute;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .button .container_button a {
+  color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+}
+header .mainHeader .button .container_button:hover {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+header .mainHeader .button .container_button:active {
+  margin-bottom: 0px;
+  transition: all 0.1s;
+  margin-left: 0px;
+}
+header .mainHeader .buttonTheme {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+header .mainHeader .buttonTheme .container_button_Theme {
+  width: 50px;
+  height: 50px;
+  background-color: #ffbf00;
+  position: absolute;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mainHeader .buttonTheme .container_button_Theme .fa-solid {
+  color: black;
+}
+header .mainHeader .buttonTheme .container_button_Theme:hover {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+header .mainHeader .buttonTheme .container_button_Theme:active {
+  margin-bottom: 0px;
+  transition: all 0.1s;
+  margin-left: 0px;
+}
+
+.menu__side {
+  width: 0px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  z-index: 300;
+  overflow: hidden;
+  overflow-y: scroll;
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar {
+  display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.name__page {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name__page i {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.options__menu {
+  padding: 20px 30px;
+  position: absolute;
+  top: 80px;
+}
+
+.options__menu a {
+  color: rgba(255, 255, 255, 0.6980392157);
+  cursor: default;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover {
+  color: white;
+}
+
+.options__menu .option {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.options__menu .option h4 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+a.selected {
+  color: #fff;
+}
+
+.selected:before {
+  content: "";
+  width: 3px;
+  height: 80%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+.menu__side_move {
+  width: 210px;
+}
+
+.mascota {
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  color: white;
+  text-decoration: underline;
+  -webkit-text-stroke: 4px black;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 970px) {
+  .mainHeader {
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 970px) and (min-width: 700px) {
+  header .mainHeader .logo {
+    margin-left: 20px;
+  }
+  header .mainHeader nav {
+    outline: 3px solid blue;
+    display: none;
+  }
+  header .mainHeader .container_icon_menu {
+    margin-right: 50px;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  header .mainHeader nav {
+    display: none;
+  }
+  header .mainHeader .container_icon_menu {
+    display: flex;
+  }
+  header .mainHeader .button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 250px) {
+  header {
+    transform: scale(0.9);
+  }
+  header .mainHeader .logo {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  header .mainHeader nav {
+    display: none;
+  }
+  header .mainHeader .container_icon_menu {
+    display: flex;
+  }
+  header .mainHeader .button {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
